@@ -6,4 +6,7 @@ WORKDIR /app
 
 RUN bundle install
 
+EXPOSE 443
+EXPOSE 80
+
 CMD ruby slack-timezone-converter.rb $SLACK_TOKEN
